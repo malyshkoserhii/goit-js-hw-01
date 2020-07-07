@@ -1,14 +1,10 @@
 "use strict";
 
 const stateInput = prompt("Введіть країну доставки товару");
-const state =  stateInput !== null ? stateInput.toLowerCase() : 'Скасовано користувачем!';
-
+const accessibleState = stateInput.toLowerCase();
 let deliveryPrice;
 
-switch (state) {
-  case 'Скасовано користувачем!':
-    alert("Скасовано користувачем!");
-    break;
+switch (accessibleState) {
   case "китай":
     deliveryPrice = 100;
     break;
@@ -28,5 +24,6 @@ switch (state) {
     alert("У вашій країні доставка недоступна");
 }
 
-console.log(`Доставка в ${state} буде коштувати ${deliveryPrice} кредитів`);
-
+console.log(
+  `Доставка в ${accessibleState} буде коштувати ${deliveryPrice} кредитів`
+);

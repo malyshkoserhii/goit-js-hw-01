@@ -8,13 +8,13 @@ let droidsAmmount;
 droidsAmmount = prompt(
   "Введіть, будь ласка, кількість дроїдів, яку бажеєте придбати"
 );
-Number(droidsAmmount);
+droidsAmmount=Number(droidsAmmount);
 
 let totalPrice = pricePerDroid * droidsAmmount;
-Number(totalPrice);
+totalPrice = Number(totalPrice);
 
 let creditsChange = credits - totalPrice;
-Number(creditsChange);
+creditsChange= Number(creditsChange);
 
 if (droidsAmmount === null) {
   console.log("Скасовано користувачем!");
