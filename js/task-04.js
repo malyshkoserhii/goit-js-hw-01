@@ -8,16 +8,15 @@ let droidsAmmount;
 droidsAmmount = prompt(
   "Введіть, будь ласка, кількість дроїдів, яку бажеєте придбати"
 );
-droidsAmmount=Number(droidsAmmount);
 
 let totalPrice = pricePerDroid * droidsAmmount;
-totalPrice = Number(totalPrice);
 
 let creditsChange = credits - totalPrice;
-creditsChange= Number(creditsChange);
 
 if (droidsAmmount === null) {
   console.log("Скасовано користувачем!");
+} else if (isNaN(Number(droidsAmmount))) {
+  console.log("Було введено не число!");
 } else if (totalPrice > credits) {
   console.log("Недостатньо кредитів на рахунку!");
 } else {

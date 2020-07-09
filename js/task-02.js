@@ -1,7 +1,7 @@
 "use strict";
 
 const total = 100;
-const ordered = 100;
+const ordered = 80;
 
 if (total < ordered) {
     console.log('На складі недостатньо товарів!');
@@ -9,7 +9,7 @@ if (total < ordered) {
     console.log('Замовлення оформлено, Вам зателефонує наш менеджер');
 }
 
-// let message =
+// const message =
 //   total < ordered
 //     ? "На складі недостатньо товарів!"
 //     : "Замовлення оформлено, Вам зателефонує наш менеджер";
