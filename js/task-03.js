@@ -2,7 +2,7 @@
 
 const ADMIN_PASSWORD = "jqueryismyjam";
 const adminInput = prompt("Введіть свій пароль");
-let tmessage;
+let message;
 
 if (ADMIN_PASSWORD === adminInput) {
   message = "Ласкаво просимо!";
