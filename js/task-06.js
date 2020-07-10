@@ -2,24 +2,18 @@
 
 let total = 0;
 
+let input;
+
 do {
-  let input = prompt("Введіть, будь ласка, число");
+  input = prompt("Введіть, будь ласка, число");
+  Number(input);
 
-  if (input === null) {
-    alert("Скасовано корстувачем!");
-    break;
-  }
-
-  input = Number(input);
-
-  const notANumber = Number.isNaN(input);
-
-  if (notANumber) {
+  if (isNaN(Number(input))) {
     alert("Ви не ввели число!");
     continue;
   }
 
-  total += input;
-} while (true);
+  total += Number(input);
+} while (input !== null);
 
 console.log(`Загальна сума ${total}`);
