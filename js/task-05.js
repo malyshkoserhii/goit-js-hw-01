@@ -3,7 +3,6 @@
 const stateInput = prompt("Введіть країну доставки товару");
 
 let deliveryPrice;
-let message;
 
 if (stateInput === null) {
   console.log("Скасовано користувачем!");
@@ -27,13 +26,12 @@ if (stateInput === null) {
       deliveryPrice = 120;
       break;
     default:
-      deliveryPrice = "delivey is unavailable";
+      alert("У Вашій країні доставка недоступна");
   }
 
-  message =
-    deliveryPrice !== "delivey is unavailable"
-      ? `Доставка в ${accessibleState} буде коштувати ${deliveryPrice} кредитів`
-      : "У Вашій країні доставка недоступна";
-
-  console.log(message);
+  if (deliveryPrice) {
+    console.log(
+      `Доставка в ${accessibleState} буде коштувати ${deliveryPrice} кредитів`
+    );
+  }
 }
