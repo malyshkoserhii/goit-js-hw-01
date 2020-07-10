@@ -1,8 +1,7 @@
 "use strict";
 
 const stateInput = prompt("Введіть країну доставки товару");
-const accessibleState =
-  stateInput === null ? "Скасовано користувачем!" : stateInput.toLowerCase();
+const accessibleState = stateInput.toLowerCase();
 let deliveryPrice;
 let message;
 
