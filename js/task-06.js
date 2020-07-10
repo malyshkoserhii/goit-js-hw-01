@@ -6,7 +6,6 @@ let input;
 
 do {
   input = prompt("Введіть, будь ласка, число");
-  Number(input);
 
   if (isNaN(Number(input))) {
     alert("Ви не ввели число!");
